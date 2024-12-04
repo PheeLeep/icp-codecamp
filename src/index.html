@@ -1,5 +1,84 @@
-<center>
-<img src="new.png" width="100%"/>
-<br/>
-<img src="ceu_codecamp.jpg"/>
-</center>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello!</title>
+</head>
+
+<body style="background-color: #195070; color: white; font-family: Arial, Helvetica, sans-serif;">
+    <div style="margin: 15px; background-color: white; color: black;">
+        <h1 style="text-align: center; padding-top: 10px; padding-bottom: 10px;">'Yo, World! I'm PheeLeep! 👋</h1>
+        <div style="margin-top: 15px; margin-left: 50px; margin-right: 50px;">
+            <h2>ℹ️ About Me</h2>
+            <p>
+                My name is Emman Edrian L. Flores (Eman in my nickname, but call me also PheeLeep as my alias.), a <span
+                    id="age"></span>
+                year old software developer, creating and debugging software, both on desktop and web application, based
+                on my hobby and
+                clients' requirements.
+                <hr>
+                I have an interest and passion on developing a software when I was 15 years old, using Visual Basic .NET
+                as my first
+                programming language. And today, I'm now developing software on both my hobby, and commission based on
+                client's
+                needs for their specific objectives and requirements.
+            </p>
+            <p>
+                My works are on my GitHub Repository Page: <a href="https://github.com/PheeLeep?tab=repositories">Click
+                    Here</a>
+            </p>
+        </div>
+        <div style="margin-top: 15px; margin-left: 50px; margin-right: 50px;">
+            <h2>🔨 Languages and Tools</h2>
+            <ul>
+                <li>Languages
+                    <ul>
+                        <li>C#</li>
+                        <li>Visual Basic .NET</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>Java</li>
+                        <li>SQL</li>
+                    </ul>
+                </li>
+                <li>Tools
+                    <ul>
+                        <li>Git</li>
+                        <li>Microsoft SQL</li>
+                        <li>MySQL</li>
+                        <li>SQLite</li>
+                        <li>Visual Studio</li>
+                        <li>Visual Studio Code</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div style="margin-top: 15px; margin-left: 50px; margin-right: 50px; padding-bottom: 15px; ">
+            <h2>📞 Contact Me</h2>
+            <p>Contact me with the following channels:</p>
+            <ul>
+                <li>Email: ggprogrammin@gmail.com</li>
+                <li>Discord: sir_pilip</li>
+                <li>Facebook: PheeLeep</li>
+                <li>Twitter: MrPheeLeep</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    function _calculateAge(birthday) {
+        var ageDifMs = Date.now() - new Date(birthday).getTime();
+        var ageDate = new Date(ageDifMs);
+        return Math.abs(ageDate.getUTCFullYear() - 1970);
+    }
+
+    window.onload = function () {
+        document.getElementById("age").innerText = _calculateAge('2002-04-08');
+    }
+</script>
+
+</html>
